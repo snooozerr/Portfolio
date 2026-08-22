@@ -1,19 +1,570 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal portfolio website for [Your Name]."
+    />
+    <title>[Your Name] | Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-    <link rel="stylesheet" href="style.css">
-</head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
-<body>
+    <header class="site-header">
+      <nav class="site-navigation container" aria-label="Main navigation">
+        <ul class="navigation-list">
+          <li><a href="#bio">Bio</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#learning-now">Journey</a></li>
+          <li><a href="#achievements-experiences">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button
+          class="theme-toggle"
+          id="theme-toggle"
+          type="button"
+          aria-pressed="false"
+          aria-label="Switch to light mode"
+        >
+          <span class="theme-toggle-icon" aria-hidden="true">◐</span>
+          <span id="theme-toggle-label">light</span>
+        </button>
+      </nav>
+    </header>
 
-    <h1>My Portfolio</h1>
+    <div class="ambient-room" aria-hidden="true">
+      <div class="ambient-sky"></div>
+      <div class="ambient-stars"></div>
+      <div class="ambient-moon"></div>
+      <div class="ambient-glow"></div>
+    </div>
 
-    <p>Hello! I'm building my portfolio website.</p>
+    <main id="main-content">
+      <section id="landing" class="landing-section">
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="container hero-content">
+          <p class="hero-greeting">hi, i’m</p>
+          <h1>[YOUR NAME]_</h1>
+          <p class="hero-tagline">[your tagline] · [your focus] · [your spark]</p>
+          <p class="hero-intro">
+            [A brief introduction about who you are and what you enjoy
+            building.]
+          </p>
+
+          <a class="hero-button" href="#bio">
+            explore <span aria-hidden="true">↓</span>
+          </a>
+
+          <div class="quick-links" aria-label="Portfolio shortcuts">
+            <a class="quick-link" href="#bio">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="7" r="3"></circle>
+                <path d="M5 20c.7-3.3 3-5 7-5s6.3 1.7 7 5"></path>
+              </svg>
+              <span class="quick-link-title">about me</span>
+              <span>more than just<br />a good resume.</span>
+              <span class="quick-link-arrow" aria-hidden="true">→</span>
+            </a>
+
+            <a class="quick-link" href="#skills">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m8 8-4 4 4 4"></path>
+                <path d="m16 8 4 4-4 4"></path>
+                <path d="m14 5-4 14"></path>
+              </svg>
+              <span class="quick-link-title">skills</span>
+              <span>technologies<br />i work with.</span>
+              <span class="quick-link-arrow" aria-hidden="true">→</span>
+            </a>
+
+            <a class="quick-link" href="#projects">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 7h7l2 2h9v11H3z"></path>
+                <path d="M3 7V4h7l2 2"></path>
+              </svg>
+              <span class="quick-link-title">projects</span>
+              <span>things i’ve built<br />and shipped.</span>
+              <span class="quick-link-arrow" aria-hidden="true">→</span>
+            </a>
+
+            <a class="quick-link" href="#learning-now">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 19c0-5 2-9 6-12"></path>
+                <path d="M5 19c4 0 8-2 12-6"></path>
+                <circle cx="6" cy="19" r="2"></circle>
+                <circle cx="18" cy="5" r="2"></circle>
+              </svg>
+              <span class="quick-link-title">journey</span>
+              <span>my path so far,<br />and beyond.</span>
+              <span class="quick-link-arrow" aria-hidden="true">→</span>
+            </a>
+
+            <a class="quick-link" href="#achievements-experiences">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8 4h8v5a4 4 0 0 1-8 0z"></path>
+                <path d="M8 6H5v2a3 3 0 0 0 3 3M16 6h3v2a3 3 0 0 1-3 3"></path>
+                <path d="M12 13v5M8 21h8M9 18h6"></path>
+              </svg>
+              <span class="quick-link-title">achievements</span>
+              <span>milestones that<br />keep me going.</span>
+              <span class="quick-link-arrow" aria-hidden="true">→</span>
+            </a>
+          </div>
+
+          <a class="scroll-indicator" href="#bio">
+            <span>scroll to explore</span>
+            <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+      </section>
+
+      <section id="bio" class="bio-section section">
+        <div class="container">
+          <p class="section-label">01 / About</p>
+          <h2>Bio + Current Status</h2>
+
+          <div class="section-content">
+            <article class="content-block">
+              <h3>Short bio</h3>
+              <p>
+                [Add a short biography, including your background and the
+                things that have shaped your work.]
+              </p>
+            </article>
+
+            <article class="content-block">
+              <h3>What I am currently doing</h3>
+              <p>
+                [Describe your current role, studies, work, or other main
+                activity.]
+              </p>
+            </article>
+
+            <article class="content-block">
+              <h3>Current focus</h3>
+              <p>
+                [Describe the areas, projects, or questions you are focusing
+                on right now.]
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="interests" class="interests-section section">
+        <div class="container">
+          <p class="section-label">02 / Curiosity</p>
+          <h2>Interests</h2>
+          <p class="section-introduction">
+            [Add the technical and personal interests you would like to share.]
+          </p>
+
+          <div class="item-grid interests-list">
+            <article class="item-card">
+              <h3>[Technical interest]</h3>
+              <p>[Short description of this interest.]</p>
+            </article>
+
+            <article class="item-card">
+              <h3>[Technical interest]</h3>
+              <p>[Short description of this interest.]</p>
+            </article>
+
+            <article class="item-card">
+              <h3>[Personal interest]</h3>
+              <p>[Short description of this interest.]</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects-section section">
+        <div class="container">
+          <p class="section-label">03 / Selected work</p>
+          <h2>Projects</h2>
+
+          <div class="project-subsection">
+            <h3>Serious / Technical Projects</h3>
+
+            <div class="project-list">
+              <article class="project-card">
+                <h4>[Technical project name]</h4>
+                <p class="project-description">
+                  [Short description of the problem this project solves and
+                  what you built.]
+                </p>
+                <dl class="project-details">
+                  <div>
+                    <dt>Technologies</dt>
+                    <dd>[Technology 1], [Technology 2], [Technology 3]</dd>
+                  </div>
+                </dl>
+                <div class="project-links">
+                  <a href="#" aria-label="GitHub repository for [Technical project name]">
+                    GitHub
+                  </a>
+                  <a href="#" aria-label="Live demo for [Technical project name]">
+                    Live demo
+                  </a>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <h4>[Technical project name]</h4>
+                <p class="project-description">
+                  [Short description of the problem this project solves and
+                  what you built.]
+                </p>
+                <dl class="project-details">
+                  <div>
+                    <dt>Technologies</dt>
+                    <dd>[Technology 1], [Technology 2], [Technology 3]</dd>
+                  </div>
+                </dl>
+                <div class="project-links">
+                  <a href="#" aria-label="GitHub repository for [Technical project name]">
+                    GitHub
+                  </a>
+                  <a href="#" aria-label="Live demo for [Technical project name]">
+                    Live demo
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="project-subsection">
+            <h3>Fun / Experimental Projects</h3>
+
+            <div class="project-list">
+              <article class="project-card">
+                <h4>[Fun or experimental project name]</h4>
+                <p class="project-description">
+                  [Short description of what you explored, experimented with,
+                  or enjoyed building.]
+                </p>
+                <dl class="project-details">
+                  <div>
+                    <dt>Technologies</dt>
+                    <dd>[Technology 1], [Technology 2], [Technology 3]</dd>
+                  </div>
+                </dl>
+                <div class="project-links">
+                  <a
+                    href="#"
+                    aria-label="GitHub repository for [Fun or experimental project name]"
+                  >
+                    GitHub
+                  </a>
+                  <a
+                    href="#"
+                    aria-label="Live demo for [Fun or experimental project name]"
+                  >
+                    Live demo
+                  </a>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <h4>[Fun or experimental project name]</h4>
+                <p class="project-description">
+                  [Short description of what you explored, experimented with,
+                  or enjoyed building.]
+                </p>
+                <dl class="project-details">
+                  <div>
+                    <dt>Technologies</dt>
+                    <dd>[Technology 1], [Technology 2], [Technology 3]</dd>
+                  </div>
+                </dl>
+                <div class="project-links">
+                  <a
+                    href="#"
+                    aria-label="GitHub repository for [Fun or experimental project name]"
+                  >
+                    GitHub
+                  </a>
+                  <a
+                    href="#"
+                    aria-label="Live demo for [Fun or experimental project name]"
+                  >
+                    Live demo
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="problem-solving" class="problem-solving-section section">
+        <div class="container">
+          <p class="section-label">04 / How I think</p>
+          <h2>Problem Solving</h2>
+          <p class="section-introduction">
+            [Explain how you understand problems, choose an approach, test
+            ideas, and learn from results.]
+          </p>
+
+          <div class="section-content">
+            <article class="content-block">
+              <h3>My problem-solving approach</h3>
+              <p>
+                [Describe your process for breaking down problems, reasoning
+                about trade-offs, and creating solutions.]
+              </p>
+            </article>
+
+            <article class="content-block">
+              <h3>Competitive programming</h3>
+              <p>
+                [Add a short overview of your competitive programming
+                experience, if applicable.]
+              </p>
+            </article>
+
+            <article class="content-block">
+              <h3>Codeforces rating</h3>
+              <p>[Add your current or peak rating, if applicable.]</p>
+            </article>
+
+            <article class="content-block">
+              <h3>LeetCode statistics</h3>
+              <p>
+                [Add relevant statistics, milestones, or a profile link, if
+                applicable.]
+              </p>
+            </article>
+
+            <article class="content-block">
+              <h3>Other achievements</h3>
+              <p>
+                [Add other relevant problem-solving achievements or milestones.]
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="skills-section section">
+        <div class="container">
+          <p class="section-label">05 / Toolkit</p>
+          <h2>Skills</h2>
+
+          <div class="skills-grid">
+            <article class="skill-category">
+              <h3>Programming languages</h3>
+              <ul>
+                <li>[Language]</li>
+                <li>[Language]</li>
+                <li>[Language]</li>
+              </ul>
+            </article>
+
+            <article class="skill-category">
+              <h3>Development</h3>
+              <ul>
+                <li>[Development skill]</li>
+                <li>[Development skill]</li>
+                <li>[Development skill]</li>
+              </ul>
+            </article>
+
+            <article class="skill-category">
+              <h3>Tools / Platforms</h3>
+              <ul>
+                <li>[Tool or platform]</li>
+                <li>[Tool or platform]</li>
+                <li>[Tool or platform]</li>
+              </ul>
+            </article>
+
+            <article class="skill-category">
+              <h3>CS / Technical areas</h3>
+              <ul>
+                <li>[Computer science area]</li>
+                <li>[Computer science area]</li>
+                <li>[Computer science area]</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="learning-now" class="learning-section section">
+        <div class="container">
+          <p class="section-label">06 / In progress</p>
+          <h2>Learning Now</h2>
+          <p class="section-introduction">
+            [Keep this list updated with the technologies and topics you are
+            currently learning.]
+          </p>
+
+          <ul class="learning-list">
+            <li>
+              <h3>[Technology or topic]</h3>
+              <p>[What you are learning and why.]</p>
+            </li>
+            <li>
+              <h3>[Technology or topic]</h3>
+              <p>[What you are learning and why.]</p>
+            </li>
+            <li>
+              <h3>[Technology or topic]</h3>
+              <p>[What you are learning and why.]</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section
+        id="achievements-experiences"
+        class="achievements-section section"
+      >
+        <div class="container">
+          <p class="section-label">07 / Milestones</p>
+          <h2>Achievements + Experiences</h2>
+          <p class="section-introduction">
+            [Add your milestones below. The entries are grouped so they can
+            become a timeline later.]
+          </p>
+
+          <div class="timeline-placeholder">
+            <article class="timeline-entry">
+              <p class="timeline-date">[Date or date range]</p>
+              <div>
+                <h3>Academic achievements</h3>
+                <p>[Add academic achievements or recognitions.]</p>
+              </div>
+            </article>
+
+            <article class="timeline-entry">
+              <p class="timeline-date">[Date or date range]</p>
+              <div>
+                <h3>Competitions</h3>
+                <p>[Add competitions, placements, or participation details.]</p>
+              </div>
+            </article>
+
+            <article class="timeline-entry">
+              <p class="timeline-date">[Date or date range]</p>
+              <div>
+                <h3>Certifications</h3>
+                <p>[Add certifications and issuing organizations.]</p>
+              </div>
+            </article>
+
+            <article class="timeline-entry">
+              <p class="timeline-date">[Date or date range]</p>
+              <div>
+                <h3>Work / Internship / Other experience</h3>
+                <p>[Add relevant work, internship, volunteer, or other experience.]</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="resources" class="resources-section section">
+        <div class="container">
+          <p class="section-label">08 / References</p>
+          <h2>Resources</h2>
+
+          <div class="resources-grid">
+            <article class="resource-category">
+              <h3>Useful learning resources</h3>
+              <ul>
+                <li><a href="#">[Resource name]</a></li>
+                <li><a href="#">[Resource name]</a></li>
+              </ul>
+            </article>
+
+            <article class="resource-category">
+              <h3>Books</h3>
+              <ul>
+                <li><a href="#">[Book title]</a></li>
+                <li><a href="#">[Book title]</a></li>
+              </ul>
+            </article>
+
+            <article class="resource-category">
+              <h3>Courses</h3>
+              <ul>
+                <li><a href="#">[Course name]</a></li>
+                <li><a href="#">[Course name]</a></li>
+              </ul>
+            </article>
+
+            <article class="resource-category">
+              <h3>Documentation</h3>
+              <ul>
+                <li><a href="#">[Documentation link]</a></li>
+                <li><a href="#">[Documentation link]</a></li>
+              </ul>
+            </article>
+
+            <article class="resource-category">
+              <h3>Problem-solving resources</h3>
+              <ul>
+                <li><a href="#">[Resource name]</a></li>
+                <li><a href="#">[Resource name]</a></li>
+              </ul>
+            </article>
+
+            <article class="resource-category">
+              <h3>Personal notes / resources</h3>
+              <ul>
+                <li><a href="#">[Personal resource]</a></li>
+                <li><a href="#">[Personal resource]</a></li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section section">
+        <div class="container">
+          <p class="section-label">09 / Get in touch</p>
+          <h2>Contact / Links</h2>
+          <p class="section-introduction">
+            [Add a short invitation for people who would like to contact or
+            connect with you.]
+          </p>
+
+          <address class="contact-links">
+            <a href="mailto:your.email@example.com">
+              <span class="contact-label">Email</span>
+              <span>your.email@example.com</span>
+            </a>
+            <a href="#">
+              <span class="contact-label">CV / Resume</span>
+              <span>[Link to your CV or resume]</span>
+            </a>
+            <a href="#">
+              <span class="contact-label">GitHub</span>
+              <span>[Your GitHub profile]</span>
+            </a>
+            <a href="#">
+              <span class="contact-label">Other link</span>
+              <span>[LinkedIn, personal blog, or other relevant link]</span>
+            </a>
+          </address>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; <span id="current-year">[Year]</span> [Your Name]</p>
+        <a href="#landing">Back to top</a>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
